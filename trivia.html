@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> 스타워즈의 세계에 오신 것을 환영합니다. </title>
+</head>
+<body style="margin: 0px;">
+    <h1> 스타워즈의 세계에 오신 것을 환영합니다! </h1>
+    <div id="test">
+    <div>
+    <ul>
+        <br><br>
+        <li> <a href="main.html"> 메인화면 </a> </li><br>
+        <li> <a href="about.html"> 스타워즈란? </a></li><br>
+        <li> <a href="series.html"> 스타워즈 시리즈 </a></li><br>
+        <li> <a href="character.html"> 스타워즈 등장인물 </a></li><br>
+        <li> 홈페이지 가입 </li><br>
+    </ul>
+</div>
+<div>
+    <br><br>
+    <h2 style="font-size: 30px;"> 스타워즈 팬페이지 가입  </h2>
+    <p style="font-size: 20px;"> 스타워즈 팬 페이지 가입하고 많은 정보를 공유해요!</p>
+    <form style="width: 1000px; margin-left: 20px;">
+        <fieldset>
+            <legend> 개인 정보 </legend>
+            <br>
+            <lable for="sname"> 이름 </lable>
+            <input type="text" id="sname" placeholder = " 이름" name="sname" value="sname"><br><br>
+            <lable for="phone"> 전화 번호 </lable>
+            <input type="tel" id="phone" name="phone" placeholder = " OOO-OOOO-OOOO" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}]" value = "phone"required><br><br>
+            <lable for="mail"> 이메일 </lable>
+            <input type="email" id="mail" placeholder = " 이메일" name="mail" required><br><br>
+            <lable for="home"> 사는 곳 </lable>
+            &nbsp 서울 <input type="radio" id="home" name="home">
+            &nbsp&nbsp  경기도 <input type="radio" id="gg" name="home" value="gg">
+            &nbsp&nbsp  강원도 <input type="radio" id="gw" name="home" value="gw">
+            &nbsp&nbsp  전라도 <input type="radio" id="jd" name="home" value="jd">
+            &nbsp&nbsp  충청도 <input type="radio" id="cc" name="home" value="cc">
+            &nbsp&nbsp  경상도 <input type="radio" id="gs" name="home" value="gs">
+            &nbsp&nbsp  제주도 <input type="radio" id="jj" name="home" value="jj">
+            <br><br>
+            <input type="submit" value="제출"> <input type="reset" value="리셋"">
+        </fieldset>
+    </form>
+    <br>
+    <form style="width: 1000px; margin-left: 20px;">
+        <fieldset>
+            <legend> 스타워즈 관련 질문 </legend>
+            <br>
+            <lable for="favor"> 좋아하는 시리즈는? </lable><br><br>
+            새로운 희망 <input type="radio" id="1" name="favor" value="1">
+            &nbsp&nbsp 제국의 역습 <input type="radio" id="2" name="favor" value="2">
+            &nbsp&nbsp 제다이의 귀환 <input type="radio" id="3" name="favor" value="3"><br><br>
+            보이지 않는 위협 <input type="radio" id="4" name="favor" value="4">
+            &nbsp&nbsp 클론의 습격 <input type="radio" id="5" name="favor" value="5">
+            &nbsp&nbsp 시스의 복수 <input type="radio" id="6" name="favor" value="6"><br><br>
+            깨어난 포스 <input type="radio" id="7" name="favor" name="favor" value="7">
+            &nbsp&nbsp 라스트 제다이 <input type="radio" id="8" name="favor" value="8">
+            &nbsp&nbsp 라이즈 오브 스카이워커 <input type="radio" id="9" name="favor" value="9">
+            <br><br>
+            <input type="submit" value="제출"> <input type="reset" value="리셋"">
+        </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>

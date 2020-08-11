@@ -1,0 +1,51 @@
+a:link { color: gray; text-decoration: none; }
+a:visited { color: gray; text-decoration: none; }
+a:hover { color: white; text-decoration: none; }
+body{
+    background-color: black;
+    color: white;
+    margin: 0pxs;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    padding: 17px;
+}
+h2{
+    margin-left: 20px;
+}
+#test ul{
+    font-size: 30px;
+    width: 320x;
+    height: 806px;
+    border-right: 1px solid #ccc;
+    margin: 0px;
+    margin-left: 35px;
+    padding: 15px;
+}
+
+#test p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#test {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+@media (max-width: 800px){
+    #test{
+        display: block;
+        }
+    #test ul{
+        height: auto;
+        border-right: none;
+    }
+    h1{
+        border-bottom: none;
+    }
+}
