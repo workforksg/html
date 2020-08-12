@@ -17,9 +17,16 @@ h1{
 h2{
     margin-left: 20px;
 }
-#test1 ul{
+
+#test1 {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 370px 1fr;
+}
+
+#test2{
     font-size: 30px;
-    width: 320x;
+    width: 370x;
     height: 806px;
     border-right: 1px solid #ccc;
     margin: 0px;
@@ -27,21 +34,16 @@ h2{
     padding: 15px;
 }
 
-#test2 p{
+#test3 p{
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#test3 {
-    margin: 0px;
-    display: grid;
-    grid-template-columns: 320px 1fr;
-}
 @media (max-width: 800px){
-    #test3{
+    #test1{
         display: block;
         }
-    #test1 ul{
+    #test2 ul{
         height: auto;
         border-right: none;
     }
