@@ -17,7 +17,7 @@ h1{
 h2{
     margin-left: 20px;
 }
-#test ul{
+#test1 ul{
     font-size: 30px;
     width: 320x;
     height: 806px;
@@ -27,12 +27,12 @@ h2{
     padding: 15px;
 }
 
-#test p{
+#test2 p{
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#test {
+#test3 {
     margin: 0px;
     display: grid;
     grid-template-columns: 320px 1fr;
