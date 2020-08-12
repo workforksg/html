@@ -38,10 +38,10 @@ h2{
     grid-template-columns: 320px 1fr;
 }
 @media (max-width: 800px){
-    #test{
+    #test3{
         display: block;
         }
-    #test ul{
+    #test1 ul{
         height: auto;
         border-right: none;
     }
