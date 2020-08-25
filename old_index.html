@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'DungGeunMo';
+            src: url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.eot');
+            src: url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.woff') format("woff"),
+            url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.woff2') format("woff2");
+        }
+        body{
+            font-family: 'DungGeunMo';
+            background: RGB(0,2,125);
+            /* background: RGB(49,76,163); */
+            color: RGB(246,246,248);
+            width: 50%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
+        h1{
+            font-size: 25px;
+        }
+
+        #hr1{
+            border: none;
+            border-top: 4px solid RGB(246,246,248);
+            color:RGB(246,246,248);
+            overflow: visible;
+            text-align: left;
+            height: 30px;
+            margin-top: 35px;
+        }
+
+        #hr1:after{
+            background: RGB(0,2,125);
+            content: '♤ 공포클럽 안내 ♤';
+            border: 4px solid RGB(246,246,248);
+            position: relative;
+            top: -17px;
+        }
+
+        #hr1+div, #hr2+div{
+            text-align: justify;
+            line-height: 150%;
+            margin-bottom: 20px;
+        }
+
+        #hr2{
+            border: 2px solid RGB(246,246,248);
+        }
+
+        #footer{
+            text-align: center;
+            font-size: 20px;
+        }
+        #text2{
+            background: RGB(0,2,125);
+            width: 200px;
+            height: 23px;
+            color: RGB(246,246,248);
+            resize: none;
+            border: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br>
+    <header></header>
+    <sector>
+        <article>
+            <div>
+                <h1>'공포 클럽'에 오신 것을 환영합니다. </h1>
+                <blockquote>
+                <hr id="hr1">
+                <div>
+                    안녕하세요. 공포 클럽입니다. 공포클럽은 무서운 공포 이야기를 다루는 곳입니다.
+                    도시 전설, 괴담, 전설 등 다양한 이야기를 다룹니다. 일부 이야기는 그다지 무섭지 않을 수 있습니다.
+                    하지만 대부분의 이야기는 공포스러운 경우가 많습니다. 혹시나 공포 이야기에 내성이 있지 않으신 분은
+                    방문을 삼가해주시기 바랍니다. 앞으로도 더욱 노력하는 공포 클럽이 되겠습니다.
+                </div>
+                <hr id="hr2">
+                <div>
+                    <p>▷ 공포클럽 운영진 메일: horror@horror.com</p>
+                    <p>▶ 공포클럽 정기 업데이트 안내: 매주 수요일 오후 7시, 금요일 오후 7시</p>
+                </div>
+                <hr id="hr2">
+                <div>
+                    <p>공포 이야기의 최강자! 공/포/클/럽</p>
+                </div>
+            </blockquote>
+            </div>
+        </article>
+        <article>
+            <div>
+                <div id="up_line"> 공포 클럽 아이디가 없는 분은 '손님' 또는 'GUEST'를 입력하십시오. </div>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div> 공 포 클 럽 ID : <textarea name="id_input" id="text2" cols="15" rows="1"></textarea></div>
+        </article>
+    </sector>
+    <br><br><br><br><br><br>
+    <footer id="footer"><P> © 이 사이트의 권리는 모두 제게 있습니다 .</P></footer>
+</body>
+</html>

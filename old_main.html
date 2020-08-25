@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'DungGeunMo';
+            src: url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.eot');
+            src: url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.woff') format("woff"),
+            url('https://github.com/workforksg/oldweb/blob/master/DungGeunMo.woff2') format("woff2");
+        }
+        body{
+            font-family: 'DungGeunMo';
+            background: RGB(0,2,125);
+            /* background: RGB(49,76,163); */
+            color: RGB(246,246,248);
+            width: 50%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
+        #hr1{
+            border: none;
+            border-top: 4px solid RGB(246,246,248);
+            color: RGB(0,2,125);
+            overflow: visible;
+            text-align: left;
+            height: 15px;
+            margin-top: 35px;
+        }
+
+        #hr1:after{
+            background: RGB(246,246,248);
+            content: '공포클럽';
+            border: 4px solid RGB(246,246,248);
+            position: relative;
+            top: -17px;
+        }
+        
+        .up{
+            text-align: center;
+        }
+        .up span:nth-child(2){
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .up span:nth-child(1){
+            float: left;
+        }
+        .up span:nth-child(3){
+            float: right;
+        }
+        #article_table, #article_table2{
+            text-align: center;
+        }
+
+        #article_table div, #article_table2 div{
+            display: inline-block;
+        }
+        #article_table div{
+            height: 20px;
+        }
+
+        #article_table div ol, #article_table2 div ol{
+            border-top: 2px dotted RGB(246,246,248);
+            border-bottom: 2px dotted RGB(246,246,248);
+            border-left: 2px solid RGB(246,246,248);
+            border-right: 2px solid RGB(246,246,248);
+            width: 300px;
+            text-align: left;
+            /* line-height: 10px; */
+            line-height: 170%;
+        }
+
+        #article_table div span, #article_table2 div span{
+            position: relative;
+            top: 43px;
+            color: RGB(0,2,125);
+            background: RGB(246,246,248);
+            font-weight: bold;
+        }
+        #article_table a, #article_table2 a{
+            color: RGB(246,246,248);
+            background: RGB(0,2,125);
+            text-decoration: none;
+        }
+        #article_table a:hover, #article_table2 a:hover{
+            color: RGB(0,2,125);
+            background: RGB(246,246,248);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #hr2{
+            border: 2px solid RGB(246,246,248);
+        }
+
+        #footer{
+            text-align: center;
+            font-size: 20px;
+        }
+        #text2{
+            background: RGB(0,2,125);
+            width: 200px;
+            height: 23px;
+            color: RGB(246,246,248);
+            resize: none;
+            border: none;
+            font-size: 20px;
+        }
+        #up_line{
+            margin-bottom: 20px;
+        }
+        #up_line span:hover{
+            color: RGB(0,2,125);
+            background: RGB(246,246,248);
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <sector>
+        <article>
+            <div>
+                <h1></h1>
+                <hr id="hr1">
+                <div class="up">
+                    <span>TOP</span>
+                    <span>공포클럽</span>
+                    <span>클럽장:김승균</span>
+                </div>
+                <hr id="hr2">
+                <blockquote>
+                <div id="article_table">
+                    <div>
+                        <span>&nbsp도시 전설&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#">한국의 도시전설</a> </li>
+                            <li> <a href="#">일본의 도시전설</a> </li>
+                            <li> <a href="#">미국의 도시전설</a> </li>
+                            <li> <a href="#">세계의 도시전설</a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                    <div>
+                        <span>&nbsp괴담의 세계&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#">한국의 괴담</a> </li>
+                            <li> <a href="#">일본의 괴담</a> </li>
+                            <li> <a href="#">미국의 괴담</a> </li>
+                            <li> <a href="#">세계의 괴담</a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                    <div>
+                        <span>&nbsp크립티드&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#"> 크립티드란? </a> </li>
+                            <li> <a href="#"> 물 속의 크립티드 </a> </li>
+                            <li> <a href="#"> 땅에 사는 크립티드 </a> </li>
+                            <li> <a href="#"> 하늘을 나는 크립티드 </a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                </div>
+                <br>
+                <div id="article_table2">
+                    <div>
+                        <span>&nbsp미제 사건&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#"> 유명 미제사건 </a> </li>
+                            <li> <a href="#"> 살인 미제사건 </a> </li>
+                            <li> <a href="#"> 실종 미제사건 </a> </li>
+                            <li> <a href="#"> 테러 미제사건 </a> </li>
+                            <li> <a href="#"> 기타 미제사건 </a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                    <div>
+                        <span>&nbsp연쇄 살인범&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#"> 연쇄 살인범의 특징 </a> </li>
+                            <li> <a href="#"> 한국의 연쇄 살인범 </a> </li>
+                            <li> <a href="#"> 미국의 연쇄 살인범 </a> </li>
+                            <li> <a href="#"> 일본의 연쇄 살인범 </a> </li>
+                            <li> <a href="#"> 세계의 연쇄 살인범 </a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                    <div>
+                        <span>&nbsp커뮤니티&nbsp</span>
+                        <ol>
+                            <br>
+                            <li> <a href="#"> 공지사항 </a> </li>
+                            <li> <a href="#"> 독자투고 </a> </li>
+                            <li> <a href="#"> 자유게시판 </a> </li>
+                            <li> <a href="#"> 질문게시판 </a> </li>
+                            <li> <a href="#"> 방명록 </a> </li>
+                            <br>
+                        </ol>
+                    </div>
+                </div>
+            </blockquote>
+            </div>
+        </article>
+        <hr id="hr2">
+        <article>
+            <div>
+                <div id="up_line"> <span>명령어안내(C)</span> <span>직접이동(GO)</span> <span>종료(X)</span>  </div>
+            </div>
+        </article>
+        <article>
+            <div> 선택> <textarea name="id_input" id="text2" cols="15" rows="1"></textarea></div>
+        </article>
+    </sector>
+    <br><br><br>
+    <footer id="footer"><P> © 이 사이트의 권리는 모두 제게 있습니다 .</P></footer>
+</body>
+<!-- </html> -->
