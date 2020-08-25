@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+
+            var A = ["#sq1", "#sq2", "#sq3", "#sq4", "#sq5", "#sq6", "#sq7", "#sq8"];
+
+            $("body").on({
+                mouseenter: function(){
+                        changecolor=setInterval(function(){
+                            for(var i = 0; i < 8; i++){
+                            var a = Math.random()*256;
+                            var b = Math.random()*256;
+                            var c = Math.random()*256;
+                            var d = "RGB("+a+","+b+","+c+")";
+                            var e = A[i];
+                            $(e).css("background", d);
+                        }}, 140)
+                    },
+                mouseleave: function() {	// mouseleave 이벤트를 설정함.
+                clearInterval(changecolor);
+              }
+            });
+
+        })
+    </script>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        #sq1{
+            position: relative;
+            top: 78.8px;
+            width: 1300px;
+            height: 1100px;
+            background: red;
+            z-index: 1;
+        }
+        #sq2{
+            top: 82.5px;
+            position: relative;
+            width: 1150px;
+            height: 935px;
+            background: blue;
+            z-index: 2;
+        }
+        #sq3{
+            top: 60.5px;
+            position: relative;
+            width: 1000px;
+            height: 814px;
+            background: green;
+            z-index: 3;
+        }
+        #sq4{
+            position: relative;
+            top: 61px;
+            width: 850px;
+            height: 692px;
+            background: paleturquoise;
+            z-index: 4;
+        }
+        #sq5{
+            position: relative;
+            top: 61.250px;
+            width: 700px;
+            height: 569.5px;
+            background: olive;
+            z-index: 5;
+        }
+        #sq6{
+            position: relative;
+            top: 61.250px;
+            width: 550px;
+            height: 447px;
+            background: mediumvioletred;
+            z-index: 6;
+        }
+        #sq7{
+            position: relative;
+            top: 61.250px;
+            width: 400px;
+            height: 325.416px;
+            background:navajowhite;
+            z-index: 7;
+        }
+        #sq8{
+            position: relative;
+            top: 61.250px;
+            width: 250px;
+            height: 203.3px;
+            background:palegreen;
+            z-index: 8;
+        }
+    </style>    
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div id="sq1">
+            <div id="sq2">
+                <div id="sq3">
+                    <div id="sq4">
+                        <div id="sq5">
+                            <div id="sq6">
+                                <div id="sq7">
+                                    <div id="sq8"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
